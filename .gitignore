@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.ipch
+*.obj
+*.pdb
+*.ilk
+*.log
+
+# Build
+bin/
+obj/
+
+# Caches
+__pycache__/
