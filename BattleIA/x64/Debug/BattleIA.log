@@ -1,0 +1,46 @@
+﻿  Application.cpp
+  Game.cpp
+  GameLoop.cpp
+  EndScreenState.cpp
+  GameStateManager.cpp
+  PlayingState.cpp
+  DiagnoseEntity.cpp
+  Main.cpp
+  CameraManager.cpp
+  EntityManager.cpp
+  ItemManager.cpp
+  ProjectileManager.cpp
+  ResourceManager.cpp
+  ZoneManager.cpp
+  EffectsRenderer.cpp
+  EntityRenderer.cpp
+  MapRenderer.cpp
+  ProjectileRenderer.cpp
+  Renderer.cpp
+  UIRenderer.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  AISystem.cpp
+  CombatSystem.cpp
+  EloSystem.cpp
+  LootSystem.cpp
+  MovementSystem.cpp
+  EndScreen.cpp
+  HUD.cpp
+  Sidebar.cpp
+  UIManager.cpp
+  EntityCard.cpp
+  ScrollableList.cpp
+  StatsPanel.cpp
+  CollisionUtils.cpp
+  Logger.cpp
+  MathUtils.cpp
+  PlatformUtils.cpp
+  RandomUtils.cpp
+  Map.cpp
+  Zone.cpp
+  Génération de code en cours...
+LINK : warning LNK4075: ' /INCREMENTAL' ignoré à cause de la spécification '/FORCE'
+raylib.lib(rcore.obj) : warning LNK4006: CloseWindow déjà défini dans user32.lib(USER32.dll) ; seconde définition ignorée
+O:\Others\BattleIA\x64\Debug\BattleIA.exe : warning LNK4088: image en cours de génération à cause de l'option /FORCE ; l'image risque de ne pas s'exécuter
+  BattleIA.vcxproj -> O:\Others\BattleIA\x64\Debug\BattleIA.exe

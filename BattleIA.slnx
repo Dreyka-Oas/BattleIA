@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BattleIA.vcxproj" Id="18104393-691c-47cc-8ea4-1b64590c4949" />
+</Solution>

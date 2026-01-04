@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{18104393-691c-47cc-8ea4-1b64590c4949}</ProjectGuid>
+    <RootNamespace>BattleIA</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\raylib\include;$(ProjectDir)external;$(ProjectDir)src;$(ProjectDir)src/Core;$(ProjectDir)src/Config;$(ProjectDir)src/Managers;$(ProjectDir)src/Utils;$(ProjectDir)src/World;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\raylib\include;$(ProjectDir)external;$(ProjectDir)src;$(ProjectDir)src/Core;$(ProjectDir)src/Config;$(ProjectDir)src/Managers;$(ProjectDir)src/Utils;$(ProjectDir)src/World;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\raylib\include;$(ProjectDir)external;$(ProjectDir)src;$(ProjectDir)src/Core;$(ProjectDir)src/Config;$(ProjectDir)src/Managers;$(ProjectDir)src/Utils;$(ProjectDir)src/World;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\raylib\include;$(ProjectDir)external;$(ProjectDir)src;$(ProjectDir)src/Core;$(ProjectDir)src/Config;$(ProjectDir)src/Managers;$(ProjectDir)src/Utils;$(ProjectDir)src/World;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="external\raygui.h" />
+    <ClInclude Include="external\raylib\include\raylib.h" />
+    <ClInclude Include="external\raylib\include\raymath.h" />
+    <ClInclude Include="external\raylib\include\rlgl.h" />
+    <ClInclude Include="src\Config\Constants.h" />
+    <ClInclude Include="src\Config\EloConfig.h" />
+    <ClInclude Include="src\Config\GameConfig.h" />
+    <ClInclude Include="src\Config\ItemConfig.h" />
+    <ClInclude Include="src\Config\RenderConfig.h" />
+    <ClInclude Include="src\Core\Application.h" />
+    <ClInclude Include="src\Core\Game.h" />
+    <ClInclude Include="src\Core\GameLoop.h" />
+    <ClInclude Include="src\Core\GameStates\EndScreenState.h" />
+    <ClInclude Include="src\Core\GameStates\GameStateManager.h" />
+    <ClInclude Include="src\Core\GameStates\PlayingState.h" />
+    <ClInclude Include="src\Entities\Brain.h" />
+    <ClInclude Include="src\Entities\Entity.h" />
+    <ClInclude Include="src\Entities\EntityComponents.h" />
+    <ClInclude Include="src\Entities\Item.h" />
+    <ClInclude Include="src\Entities\Projectile.h" />
+    <ClInclude Include="src\Managers\CameraManager.h" />
+    <ClInclude Include="src\Managers\EntityManager.h" />
+    <ClInclude Include="src\Managers\ItemManager.h" />
+    <ClInclude Include="src\Managers\ProjectileManager.h" />
+    <ClInclude Include="src\Managers\ResourceManager.h" />
+    <ClInclude Include="src\Managers\ZoneManager.h" />
+    <ClInclude Include="src\Rendering\EffectsRenderer.h" />
+    <ClInclude Include="src\Rendering\EntityRenderer.h" />
+    <ClInclude Include="src\Rendering\FuturisticEffects.h" />
+    <ClInclude Include="src\Rendering\MapRenderer.h" />
+    <ClInclude Include="src\Rendering\ProjectileRenderer.h" />
+    <ClInclude Include="src\Rendering\Renderer.h" />
+    <ClInclude Include="src\Rendering\UIRenderer.h" />
+    <ClInclude Include="src\Systems\AISystem.h" />
+    <ClInclude Include="src\Systems\CombatSystem.h" />
+    <ClInclude Include="src\Systems\EloSystem.h" />
+    <ClInclude Include="src\Systems\LootSystem.h" />
+    <ClInclude Include="src\Systems\MovementSystem.h" />
+    <ClInclude Include="src\UI\EndScreen.h" />
+    <ClInclude Include="src\UI\HUD.h" />
+    <ClInclude Include="src\UI\Sidebar.h" />
+    <ClInclude Include="src\UI\UIManager.h" />
+    <ClInclude Include="src\UI\Widgets\EntityCard.h" />
+    <ClInclude Include="src\UI\Widgets\ScrollableList.h" />
+    <ClInclude Include="src\UI\Widgets\StatsPanel.h" />
+    <ClInclude Include="src\Utils\CollisionUtils.h" />
+    <ClInclude Include="src\Utils\Logger.h" />
+    <ClInclude Include="src\Utils\MathUtils.h" />
+    <ClInclude Include="src\Utils\PlatformUtils.h" />
+    <ClInclude Include="src\Utils\RandomUtils.h" />
+    <ClInclude Include="src\World\Map.h" />
+    <ClInclude Include="src\World\Tile.h" />
+    <ClInclude Include="src\World\Zone.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Core\Application.cpp" />
+    <ClCompile Include="src\Core\Game.cpp" />
+    <ClCompile Include="src\Core\GameLoop.cpp" />
+    <ClCompile Include="src\Core\GameStates\EndScreenState.cpp" />
+    <ClCompile Include="src\Core\GameStates\GameStateManager.cpp" />
+    <ClCompile Include="src\Core\GameStates\PlayingState.cpp" />
+    <ClCompile Include="src\DiagnoseEntity.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Managers\CameraManager.cpp" />
+    <ClCompile Include="src\Managers\EntityManager.cpp" />
+    <ClCompile Include="src\Managers\ItemManager.cpp" />
+    <ClCompile Include="src\Managers\ProjectileManager.cpp" />
+    <ClCompile Include="src\Managers\ResourceManager.cpp" />
+    <ClCompile Include="src\Managers\ZoneManager.cpp" />
+    <ClCompile Include="src\Rendering\EffectsRenderer.cpp" />
+    <ClCompile Include="src\Rendering\EntityRenderer.cpp" />
+    <ClCompile Include="src\Rendering\MapRenderer.cpp" />
+    <ClCompile Include="src\Rendering\ProjectileRenderer.cpp" />
+    <ClCompile Include="src\Rendering\Renderer.cpp" />
+    <ClCompile Include="src\Rendering\UIRenderer.cpp" />
+    <ClCompile Include="src\Systems\AISystem.cpp" />
+    <ClCompile Include="src\Systems\CombatSystem.cpp" />
+    <ClCompile Include="src\Systems\EloSystem.cpp" />
+    <ClCompile Include="src\Systems\LootSystem.cpp" />
+    <ClCompile Include="src\Systems\MovementSystem.cpp" />
+    <ClCompile Include="src\UI\EndScreen.cpp" />
+    <ClCompile Include="src\UI\HUD.cpp" />
+    <ClCompile Include="src\UI\Sidebar.cpp" />
+    <ClCompile Include="src\UI\UIManager.cpp" />
+    <ClCompile Include="src\UI\Widgets\EntityCard.cpp" />
+    <ClCompile Include="src\UI\Widgets\ScrollableList.cpp" />
+    <ClCompile Include="src\UI\Widgets\StatsPanel.cpp" />
+    <ClCompile Include="src\Utils\CollisionUtils.cpp" />
+    <ClCompile Include="src\Utils\Logger.cpp" />
+    <ClCompile Include="src\Utils\MathUtils.cpp" />
+    <ClCompile Include="src\Utils\PlatformUtils.cpp" />
+    <ClCompile Include="src\Utils\RandomUtils.cpp" />
+    <ClCompile Include="src\World\Map.cpp" />
+    <ClCompile Include="src\World\Zone.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
